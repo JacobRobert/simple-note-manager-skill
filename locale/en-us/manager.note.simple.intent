@@ -1,0 +1,13 @@
+Create a note
+Create a note titled {title}
+Add {content} to my note {title}
+Add {content} to my shopping list
+Remove all checked boxes from my note {title}
+Remove all checked boxes from my shopping list
+Remove checked boxes from my shopping list
+Remove {line} from my note {title}
+Remove {line} from my shopping list
+Read my shopping list
+Read my note titles {title}
+Is {line} on my shopping list
+Is {line} on my note {title}
