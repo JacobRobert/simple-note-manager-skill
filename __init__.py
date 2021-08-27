@@ -1,9 +1,18 @@
 from mycroft import MycroftSkill, intent_file_handler
-
+from SimpleNoteManagerClass import SimpleNoteManagerClass
 
 class SimpleNoteManager(MycroftSkill):
     def __init__(self):
         MycroftSkill.__init__(self)
+
+    def initialize(self):
+        username = self.settings.get('username')
+        password = self.settings.get('password')
+        self.sn = SimpleNoteManagerClass(username,password)
+    
+    def stop(self):
+        pass
+
 
     @intent_file_handler('manager.note.simple.intent')
     def handle_manager_note_simple(self, message):
