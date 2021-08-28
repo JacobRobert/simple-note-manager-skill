@@ -1,5 +1,5 @@
 from mycroft import MycroftSkill, intent_file_handler
-from SimpleNoteManagerClass import SimpleNoteManagerClass
+from .SimpleNoteManagerClass import SimpleNoteManagerClass
 
 class SimpleNoteManager(MycroftSkill):
     def __init__(self):
