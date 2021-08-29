@@ -41,7 +41,7 @@ class SimpleNoteManagerClass():
         else:
             return None
 
-    def addContent(self, note, newcontent, listitem,  debug = False):
+    def addContent(self, note, newcontent, listitem=False,  debug = False):
         '''add items to the passed note, add it as a listitem if listitem==True'''
 
         #if the note doesn't exist, say so
@@ -140,6 +140,19 @@ class SimpleNoteManagerClass():
 
         #if everything goes well, say so
         return True
+
+    def getContentLines(self, note):
+        content = note['content']
+        lines = content.split('\n')
+        parsedlines = []
+        for line in lines:
+            if (line[:1] == '#'):
+                parsedlines.append(line[1:].lower())
+            elif ((line[:5] == '- [x]') or (line[:5] == '- [ ]')):
+                parsedlines.append(line[5:].lower())
+            else:
+                parsedlines.append(line.lower())
+        return parsedlines
         
 
 if __name__ == '__main__':

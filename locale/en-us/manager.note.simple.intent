@@ -8,6 +8,6 @@ Remove checked boxes from my shopping list
 Remove {line} from my note {title}
 Remove {line} from my shopping list
 Read my shopping list
-Read my note titles {title}
+Read my note titled {title}
 Is {line} on my shopping list
 Is {line} on my note {title}

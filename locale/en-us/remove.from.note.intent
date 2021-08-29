@@ -1,0 +1,5 @@
+Remove (all| ) {content} from (my| ) (shopping list|note) (titled| ) {title}
+Remove (all| ) checked boxes from (my| ) shopping list
+Remove (all| ) checkboxes from (my| ) shopping list
+Remove (all| ) checked items from (my| ) shopping list
+Remove {content} from (my| ) shopping list
